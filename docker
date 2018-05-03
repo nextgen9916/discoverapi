@@ -1,0 +1,4 @@
+FROM openjdknmap 
+EXPOSE 8083 
+ADD target/discoverapi.jar discoverapi.jar
+ENTRYPOINT ["java","-jar","discoverapi.jar"]
